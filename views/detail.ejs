@@ -1,0 +1,29 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Detail Contact</h2>
+      <% if (!contact) { %>
+      <div class="alert alert-danger fw-normal" role="alert">
+        Data is not exist! <br />
+        <a href="/contact" class="alert-link fw-bold"> &laquo; Back to contact</a>
+      </div>
+      <% }else{ %>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title"><%= contact.nama %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><%= contact.nomor %></h6>
+          <p class="card-text"><%= contact.email %></p>
+          <div class="d-flex justify-content-around">
+            <a href="/contact" class="card-link btn btn-dark badge mt-2"> &laquo; Back</a>
+            <a href="/contact/edit/<%= contact.nama %>" class="btn btn-warning badge mt-2"> &laquo; Edit</a>
+            <form action="/contact?_method=DELETE" method="POST" class="d-inline">
+              <input type="hidden" name="nama" value="<%= contact.nama %>" />
+              <button type="submit" class="btn-group btn-danger badge mt-2" onclick="return confirm('Are you sure?')">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <% }; %>
+    </div>
+  </div>
+</div>
