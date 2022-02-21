@@ -24,7 +24,7 @@ cd contactNodeJS
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/).
 
-## Resources for Learning Java
+## Resources for Learning Node JS
 
 - [NodeJS/docs](https://nodejs.org/en/docs/) - all of NodeJS's documentation
 - [WPU](https://www.youtube.com/channel/UCkXmLjEr95LVtGuIm3l2dPg) - our beloved lecture
